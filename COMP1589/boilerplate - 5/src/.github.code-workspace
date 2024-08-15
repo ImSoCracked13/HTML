@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../.github"
+		},
+		{
+			"path": "../dist"
+		},
+		{
+			"path": "../docs"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../test"
+		}
+	]
+}

@@ -1,0 +1,28 @@
+<p style="font-size: 30px; line-height: 2;">
+    <span id="launch_counter">00:00:00</span>
+    <button style="background: none; border: none;">
+        <img style="width: 30px; height: auto; display: block;"
+src="https://cdn0.iconfinder.com/data/icons/glyphpack/41/refresh-512.png">
+    </button>
+</p>
+<script>
+const launchDate = new Date('June 5, 2022 11:00:00').getTime()
+const calculateDifference = () => {
+
+    const now = new Date().getTime()
+
+    return launchDate - now;
+}
+const updateCounter = () => {
+    const timeDifference = calculateDifference()
+
+    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24))
+    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60))
+    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000)
+
+    const outputElement = document.getElementById('launch_counter')
+
+    outputElement.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s "
+}
+</script>

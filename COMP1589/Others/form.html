@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Body Type Survey</h1>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+
+</form> 
+
+
+<h2>Select a Body Type</h2>
+
+<form action="/action_page.php">
+  <label for="bodytype">Choose a Body Type:</label>
+  <select name="bodytype" id="bodytype">
+    <option value="bulk">Bulk</option>
+    <option value="cut">Cut</option>
+    <option value="shredded">Shredded</option>
+    <option value="jacked">Jacked</option>
+    <option value="fit">Fit</option>
+  </select>
+  <br><br>
+
+
+<h2>Survey</h2>
+
+<p>What is your <strong>preferable workout method</strong> for changing appearance?</p>
+
+<form action="/action_page.php">
+  <input type="checkbox" id="method" name="method1" value="Bodybuilding">
+  <label for="method1">Bodybuilding</label><br>
+  <input type="checkbox" id="method" name="method2" value="Gymnastics">
+  <label for="method2">Gymnastics</label><br>
+  <input type="checkbox" id="method" name="method3" value="Calisthenics">
+  <label for="method3">Calisthenics</label><br>
+  <input type="checkbox" id="method" name="method4" value="Powerlifting">
+  <label for="method4">Powerlifting</label><br><br>
+
+  <button onclick="myFunction()">Submit</button>
+
+<p id="method"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "You picked",+ method.value;
+}
+
+
+
+</script>
+</form> 
+</body>
+</html>
