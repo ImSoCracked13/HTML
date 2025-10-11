@@ -1,0 +1,46 @@
+/* Problem 1 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+div {
+  background: #ccc;
+  border: 5px solid purple;
+  padding: 20px;
+  margin: 20px;
+  width: 400px; 
+}
+
+.standard {
+  box-sizing: content-box; 
+}
+
+.alternate {
+  box-sizing: border-box;
+  width: 450px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Problem 2 */
+.box {
+  border: 5px dotted black;
+  margin-top: 20px;           
+  margin-right: 1em;         
+  margin-bottom: 40px;       
+  margin-left: 2em;        
+  padding: 1em;           
+}
+
+/* Problem 3 */
+.highlight {
+  background-color: pink;
+  border: 3px solid black;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}

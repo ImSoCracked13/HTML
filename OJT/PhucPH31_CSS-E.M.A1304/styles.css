@@ -1,0 +1,173 @@
+/* Base reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Top panel (menu icon) */
+.top-panel {
+  padding: 16px;
+}
+
+.top-panel i {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Layout grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.half {
+  flex: 1 1 50%;
+  padding: 16px;
+}
+
+.left h1 {
+  margin-bottom: 10px;
+}
+
+.right p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Right container paragraphs styling */
+.half.container.xlarge.text-grey {
+  text-align: left;
+}
+
+.half.container.xlarge.text-grey p {
+  text-align: left;
+}
+
+/* Text styles */
+.text-light-grey { color: #ccc; }
+.text-grey { color: #999; }
+.jumbo { font-size: 3em; font-weight: 600; }
+.text-large { font-size: 1.1em; color: #777; }
+.xlarge { font-size: 1.5em; }
+.xxlarge { font-size: 2.5em; }
+
+.panel {
+  padding: 16px;
+}
+
+.panel h4 {
+  color: #666;
+  letter-spacing: 1px;
+}
+
+/* Image layout */
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.third {
+  flex: 1 1 33.33%;
+  padding: 20px;
+  min-height: 200px;
+  color: white;
+}
+
+.footer-box h2 {
+  margin-bottom: 16px;
+  font-size: 1.5em;
+}
+
+.footer-box p {
+  font-size: 1em;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.black { 
+  background: #000; 
+  text-align: left; 
+}
+
+.dark-grey { 
+  background: #444; 
+}
+
+.grey { 
+  background: #777; 
+}
+
+.center {
+  text-align: center;
+}
+
+.large {
+  font-size: 1.1em;
+}
+
+.text-white {
+  color: white;
+}
+
+.socials {
+  margin-top: 10px;
+}
+
+.socials .icon {
+  font-size: 24px;
+  margin: 4px 0;
+  display: inline-block;
+}
+
+.container {
+  padding: 16px;
+}
+
+.container p {
+  text-align: center;
+  color: #777;
+  font-size: 0.9em;
+  margin: 16px 0;
+}
+
+.container a {
+  color: #777;
+  text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .half, .third {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .left, .right {
+    text-align: center;
+  }
+
+  .black {
+    text-align: center;
+  }
+}

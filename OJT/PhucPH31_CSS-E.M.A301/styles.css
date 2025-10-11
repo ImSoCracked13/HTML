@@ -1,0 +1,118 @@
+/* Problem 1 */
+.problem1 h1 {
+  color: blue;
+}
+
+.problem1 h2 {
+  background: blue;
+  color: white;
+}
+
+.problem1 span {
+  font-size: 200%;
+}
+
+/* Problem 2 */
+.problem2 #special {
+  background: yellow;
+}
+
+.problem2 .alert {
+  border: 1px solid grey;
+  padding: 2px 4px;
+}
+
+.problem2 .alert.stop {
+  background: red;
+  color: black;
+}
+
+.problem2 .alert.go {
+  background: green;
+  color: black;
+}
+
+/* Problem 3 */
+.problem3 a:link {
+  color: orange;
+  text-decoration: none;
+}
+
+.problem3 a:visited {
+  color: green;
+  text-decoration: none;
+}
+
+.problem3 a:hover {
+  text-decoration: underline;
+}
+
+.problem3 p:first-of-type {
+  font-size: 150%;
+}
+.problem3 p:first-of-type {
+  color: red;
+}
+.problem3 p:first-of-type a {
+  color: inherit;
+}
+.problem3 p:first-of-type a:nth-of-type(1) {
+  color: green;
+  text-decoration: underline;
+}
+.problem3 p:first-of-type a:nth-of-type(2) {
+  color: orange;
+  text-decoration: none;
+}
+.problem3 p:first-of-type a:nth-of-type(2):hover {
+  text-decoration: underline;
+}
+
+.problem3 table {
+  border-collapse: collapse;
+  width: 50%;
+  margin-top: 15px;
+}
+
+.problem3 th, 
+.problem3 td {
+  padding: 6px 12px;
+  text-align: left;
+}
+
+.problem3 tbody tr:nth-child(odd) {
+  background: #333;
+  color: white;
+}
+
+/* Problem 4 */
+.problem4 h2 + p {
+  color: red;
+}
+
+.problem4 ul.list > li {
+  list-style: none;
+  border-bottom: 1px solid grey;
+  padding: 4px 0;
+}
+
+/* Problem 5 */
+.problem5 a {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.problem5 a[title] {
+  border-color: pink;
+}
+
+.problem5 a[href*="contact"] {
+  border-color: orange;
+}
+
+.problem5 a[href^="https"] {
+  border-color: green;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial</title>
+    <style>
+        div {
+            width: 250px;
+            height: 100px;
+            margin: 10px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+        .r1 { background: radial-gradient(ellipse, red, yellow); }
+        .r2 { background: radial-gradient(ellipse, blue, green); }
+        .r3 { background: radial-gradient(circle at top left, purple, pink); }
+    </style>
+</head>
+<body>
+    <div class="r1">Circle</div>
+    <div class="r2">Ellipse</div>
+    <div class="r3">Top Left</div>
+</body>
+</html>
